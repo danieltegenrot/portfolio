@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+html {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    .content-wrapper, .footer-content {
+        margin: 0 1.5rem;
+    }
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray: #4D455D;
+    --green: #1B8B86;
+    --red: #E96479;
+}
+
+.page-container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 32rem;
+    padding-bottom: 12rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.image-collage {
+    padding-top: 1rem;
+}
+
+.image-collage p {
+    text-align: end;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 32rem;
+}
+
+h1 {
+    font-family: 'Maitree', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: end;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+h2 {
+    font-family: 'Maitree', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: end;
+    margin-top: 0;
+}
+
+#portfolio .home-icon .bi {
+    fill: lightgray;
+}
+
+#portfolio .home-icon {
+    pointer-events: none;
+    cursor: default;
+}
+
+.home-icon {
+    text-align: end;
+    padding: 1rem 0;
+}
+
+#text h2 {
+    color: var(--gray);
+}
+
+#kod h2 {
+    color: var(--green);
+}
+
+#grafik h2 {
+    color: var(--red);
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+}
+
+a:hover {
+    opacity: 0.8;
+} 
+
+.about-text-link {
+    color: var(--gray);
+}
+
+.about-code-link {
+    color: var(--green);
+}
+
+.about-visuals-link {
+    color: var(--red);
+}
+
+.tab-right {
+    margin-left: 1rem;
+}
+
+.about-text-button, 
+.about-code-button,
+.about-visuals-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    width: 12rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.about-text-button {
+    background-color: var(--gray);
+}
+
+.about-code-button {
+    background-color: var(--green);
+}
+
+.about-visuals-button {
+    background-color: var(--red);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    height: 8rem;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem 0;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    font-family: "Maitree", sans-serif;
+    color: white;
+
+}

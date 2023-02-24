@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'daniel/portfolio.css'%} " />
+    <title>{{ header }}</title>
+</head>
+<body>
+    <div id="{{page}}" class="page-container">
+        <div class="content-wrapper">
+            <div class="hero">
+                <h1>Daniel Tegenrot</h1>
+                <a href="portfolio" class="home-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                    </svg>
+                </a>
+                
+            </div>
+            <h2> {{header}} </h2>
+            {{content|safe}}
+            {% if page == "grafik" %}
+                <div class="image-collage">
+                    <img src=" {% static 'daniel/sportfack.png'%} " />
+                    <p>Denna och fler annonser i samma stil var med som helsidor i flertalet av Egmonts tidningar</p>
+                    <img src=" {% static 'daniel/webannons.png'%} " />
+                    <p>Samma reklamkampanj fast för webben</p>
+                    <img src=" {% static 'daniel/painting-app.png'%} " />
+                    <p>Ett utkast på en målarapp</p>
+                </div>
+            {%endif%}
+            <p class="tab-right">Läs mer om...</p>
+            {% if about_text_button == True %}
+                <a href="text" class="about-text-button">Innehållsrik text</a>
+            {%endif%}
+            {% if about_code_button == True %}
+                <a href="kod" class="about-code-button">Lättförstådd kod</a>
+            {%endif%}
+            {% if about_visuals_button == True %}
+                <a href="grafik" class="about-visuals-button">Målande grafik</a>
+            {%endif%}
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>Jag har sett tillräckligt. Hur kommer jag i kontakt?</p>
+                <a href="mailto:daniel@tegenrot.se">daniel@tegenrot.se</a>
+                <a target="_blank" href="https://www.linkedin.com/in/daniel-tegenrot/">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
