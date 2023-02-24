@@ -139,6 +139,28 @@ a:hover {
     margin-left: 1rem;
 }
 
+.button-parent {
+    display: flex;
+    align-items: center;
+}
+
+.button-parent .bi {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.button-parent .bi-vector-pen {
+    fill: var(--red);
+}
+
+.button-parent .bi-file-text {
+    fill: var(--gray);
+}
+
+.button-parent .bi-code {
+    fill: var(--green);
+}
+
 .about-text-button, 
 .about-code-button,
 .about-visuals-button {
