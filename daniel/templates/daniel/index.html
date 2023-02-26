@@ -21,21 +21,29 @@
             </a>
             <h2> {{header}} </h2>
             {{welcome_text|safe}}
-            <div class="text-box-container">
-                {{first_text_box|safe}}
-                {{second_text_box|safe}}
-                {{third_text_box|safe}}
-            </div>
+            {% if page != "grafik" %}
+                <div class="text-box-container">
+                    {{first_text_box|safe}}
+                    {{second_text_box|safe}}
+                    {{third_text_box|safe}}
+                </div>
+            {% else %}
+                {{no_text_box|safe}}
+            {%endif%}
             {% if page == "grafik" %}
                 <div class="image-collage">
-                    <img src=" {% static 'daniel/sportfack.png'%} " />
-                    <p>Denna och fler annonser i samma stil var med som helsidor i flertalet av Egmonts tidningar</p>
+                    <div class="img-square-parent">
+                        <img src=" {% static 'daniel/sportfack.png'%} " />
+                        <p>Denna och andra annonser i samma stil var med som helsidor i flertalet av Egmonts tidningar</p>
+                    </div>
+                    <div class="img-square-parent">
+                        <img class="right-side-img" src=" {% static 'daniel/painting-app.png'%} " />
+                        <p class="center-text">Ett utkast på en målarapp</p>
+                    </div> 
                     <img src=" {% static 'daniel/webannons.png'%} " />
-                    <p>Samma reklamkampanj fast för webben</p>
-                    <img src=" {% static 'daniel/painting-app.png'%} " />
-                    <p>Ett utkast på en målarapp</p>
+                    <p class="space-underneath">Samma reklamkampanj som Egmont fast för webben</p>            
                     <img src=" {% static 'daniel/boka.png'%} " />
-                    <p>Utklipp från boka.se som jag var med och designade stora delar av</p>
+                    <p class="space-underneath">Utklipp från boka.se som jag var med och designade stora delar av</p>
                 </div>
             {%endif%}
             <p class="read-about-text">Läs mer om...</p>

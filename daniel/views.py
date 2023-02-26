@@ -11,6 +11,7 @@ def page(request, page):
     about_text_button = True
     about_code_button = True
     about_visuals_button = True
+    no_text_box = None
 
     if page == "portfolio":
         header = "Portfolio"
@@ -34,7 +35,8 @@ def page(request, page):
         about_code_button = False
     elif page == "grafik":
         header = "Målande grafik"
-        #content = f"<p>En bild säger ju mer än tusen ord så... <br/><br/>Psst! Kika gärna in på <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-visuals-link'>halsomedicinsktcenter.se</a> som jag designat helt från grunden.</p>"
+        welcome_text = f"<p class='big-text'>En bild säger ju mer än tusen ord så...</p>"
+        no_text_box = f"<p>Psst! Kika gärna in på <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-visuals-link'>halsomedicinsktcenter.se</a> som jag designat helt från grunden.</p>"
         about_visuals_button = False
 
     return render(request, "daniel/index.html", {
@@ -44,6 +46,7 @@ def page(request, page):
         "first_text_box": first_text_box,
         "second_text_box": second_text_box,
         "third_text_box": third_text_box,
+        "no_text_box": no_text_box,
         "about_text_button": about_text_button,
         "about_code_button": about_code_button,
         "about_visuals_button": about_visuals_button

@@ -49,21 +49,46 @@ body {
     opacity: 0.8;
 } 
 
-.image-collage {
-    padding-top: 1rem;
-}
-
 .image-collage p {
-    text-align: end;
-    font-size: 0.9rem;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-align: end;
+    margin-top: .5rem;
 }
 
 img {
     width: 100%;
     object-fit: cover;
     max-height: 32rem;
+}
+
+p.space-underneath {
+    margin-bottom: 3rem;
+}
+
+.img-square-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.right-side-img {
+    order: 2;
+}
+
+.img-square-parent img {
+    width: 50%;
+}
+
+.img-square-parent p {
+    text-align: start;
+    margin-top: 0;
+    width: 45%;
+}
+
+p.center-text {
+    text-align: center;
 }
 
 h1 {
