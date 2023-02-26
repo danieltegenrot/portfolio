@@ -5,29 +5,19 @@ html {
     font-size: 18px;
 }
 
-@media only screen and (max-width: 600px) {
-    html {
-        font-size: 16px;
-    }
-    .content-wrapper, .footer-content {
-        margin: 0 1.5rem;
-    }
-  }
-
 body {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --gray: #4D455D;
-    --green: #1B8B86;
-    --red: #E96479;
+    --gray: #8B45C2;
+    --green: #6BAA75;
+    --red: #FD7347;
 }
 
 .page-container {
     position: relative;
-    width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -36,8 +26,9 @@ body {
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 32rem;
+    max-width: 56rem;
     padding-bottom: 12rem;
+    margin: 0 1.5rem;
 }
 
 #portfolio .hero {
@@ -78,7 +69,7 @@ img {
 h1 {
     font-family: 'Maitree', sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: end;
     margin: 0;
     padding-right: 1rem;
@@ -87,7 +78,7 @@ h1 {
 h2 {
     font-family: 'Maitree', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: end;
     margin-top: 0;
 }
@@ -124,6 +115,23 @@ p {
     font-size: 1rem;
 }
 
+.text-box-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4%;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    width: 16rem;
+    line-height: 1.4;
+}
+
+.big-text {
+    font-size: 2rem;
+}
+
 a {
     font-weight: 700;
     font-family: "Mulish", sans-serif;
@@ -146,24 +154,33 @@ a:hover {
     color: var(--red);
 }
 
-.tab-right {
-    margin-left: 1rem;
+.read-about-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .button-parent {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.button-parent:hover .bi{
+/*.button-parent:hover .bi{
     width: 32px;
     height: 32px;
-}
+}*/
 
 .button-parent .bi {
-    padding-left: 1rem;
     padding-top: 1rem;
-    transition: all 0.2s ease-out;
+    /*transition: all 0.2s ease-out;*/
 }
 
 .button-parent .bi-vector-pen {
@@ -189,7 +206,6 @@ a:hover {
     width: 12rem;
     text-align: center;
     margin-top: 1rem;
-    margin-left: 1rem;
 }
 
 .about-text-button {
@@ -207,8 +223,9 @@ a:hover {
 .footer-content {
     display: flex;
     flex-direction: column;
-    width: 32rem;
+    width: 56rem;
     height: 8rem;
+    margin: 0 1.5rem;
 }
 
 footer {
@@ -227,3 +244,28 @@ footer a {
     color: white;
 
 }
+
+@media only screen and (max-width: 1000px) {
+    .text-box-container {
+        flex-direction: column;
+    }
+    .big-text {
+        width: 28rem;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .big-text {
+        font-size: 1.5rem;
+        width: auto;
+    }
+  }
