@@ -20,28 +20,32 @@
                 </div>
             </a>
             <h2> {{header}} </h2>
-            {{welcome_text|safe}}
+            
             {% if page != "grafik" %}
                 <div class="text-box-container">
+                    {{welcome_text|safe}}
                     {{first_text_box|safe}}
                     {{second_text_box|safe}}
                     {{third_text_box|safe}}
                 </div>
             {% else %}
+                {{welcome_text|safe}}
                 {{no_text_box|safe}}
             {%endif%}
             {% if page == "grafik" %}
                 <div class="image-collage">
                     <div class="img-square-parent">
                         <img src=" {% static 'daniel/sportfack.png'%} " />
-                        <p>Denna och andra annonser i samma stil var med som helsidor i flertalet av Egmonts tidningar</p>
+                        <img src=" {% static 'daniel/aka-skidor.png'%} " />
                     </div>
-                    <div class="img-square-parent">
-                        <img class="right-side-img" src=" {% static 'daniel/painting-app.png'%} " />
-                        <p class="center-text">Ett utkast på en målarapp</p>
-                    </div> 
+                    <p>Denna och andra annonser i samma stil var med som helsidor i flertalet av Egmonts tidningar</p>
                     <img src=" {% static 'daniel/webannons.png'%} " />
-                    <p class="space-underneath">Samma reklamkampanj som Egmont fast för webben</p>            
+                    <p class="space-underneath">Samma reklamkampanj fast för webben</p> 
+                    <div class="img-square-parent">
+                        <img src=" {% static 'daniel/painting-app-1.png'%} " />
+                        <img src=" {% static 'daniel/painting-app-2.png'%} " />
+                    </div> 
+                    <p>Ett utkast på en målarapp</p>          
                     <img src=" {% static 'daniel/boka.png'%} " />
                     <p class="space-underneath">Utklipp från boka.se som jag var med och designade stora delar av</p>
                 </div>

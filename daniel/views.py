@@ -29,14 +29,14 @@ def page(request, page):
     elif page == "kod":
         header = "Lättförstådd kod"
         welcome_text = f"<p class='big-text'>Bra kod bör flöda som texten i en bok. Den ska vara lätt att läsa. Inte göra jobbet med så få tecken som möjligt.</p>" 
-        first_text_box = f"<p class='text-box'>Jag är kunnig i HTML, CSS/Sass, Bootstrap, Javacsript, React m. m. Jag har en del erfarenhet av att sätta upp CMS-databaser men håller mig gärna på frontend-sidan av webben.</p>" 
+        first_text_box = f"<p class='text-box'>Jag kan HTML, CSS/Sass, Bootstrap, Javacsript, React m. m. Jag har en del erfarenhet av att sätta upp CMS-databaser men håller mig gärna på frontend-sidan av webben.</p>" 
         second_text_box = f"<p class='text-box'>Jag hade ansvar för frontend på <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-code-link'>halsomedicinsktcenter.se</a> när sidan byggdes om och jag var även med och byggde om framsidan åt <a target='_blank' href='https://boka.se' class='about-code-link'>boka.se</a> från grunden.</p>"
         third_text_box = f"<p class='text-box'>Den här sajten är byggd med Django och Python. <a target='_blank' href='https://github.com/danieltegenrot/portfolio' class='about-code-link'>GitHub</a></p>"
         about_code_button = False
     elif page == "grafik":
         header = "Målande grafik"
         welcome_text = f"<p class='big-text'>En bild säger ju mer än tusen ord så...</p>"
-        no_text_box = f"<p>Psst! Kika gärna in på <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-visuals-link'>halsomedicinsktcenter.se</a> som jag designat helt från grunden.</p>"
+        no_text_box = f"<p class='space-underneath'>Psst! Kika gärna in på <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-visuals-link'>halsomedicinsktcenter.se</a> som jag designat helt från grunden.</p>"
         about_visuals_button = False
 
     return render(request, "daniel/index.html", {
