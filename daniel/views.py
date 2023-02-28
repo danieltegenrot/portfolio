@@ -18,7 +18,7 @@ def page(request, page):
         welcome_text = f"<p class='big-text'>Hej!<br/><br/> Jag är en av de stjärnor som ser till att webben blir en snyggare och roligare plats att vara på.</p>"
         first_text_box = f"<p class='text-box'>Front end och UX är mina spetsområden. Jag jobbar lika bra i Figma som i exempelvis React och har erfarenhet av CMS-system såsom Wordpress.</p>"
         second_text_box = f"<p class='text-box'>Genom att kombinera <a href='/portfolio/text' class='about-text-link'>innehållsrik text</a>, <a href='/portfolio/kod' class='about-code-link'>lättförstådd kod</a> och <a href='/portfolio/grafik' class='about-visuals-link'>målande grafik</a> skapar jag engagerande och intressanta webb-sajter som är för alla.</p>"
-        third_text_box = f"<p class='text-box'>De senaste två projekten jag jobbade på var Hälsomedicinskt Center som driver vårdcentraler runtom i Skåne, samt boka.se som är en av sveriges största bokningssajter.</p>"
+        third_text_box = f"<p class='text-box'>De senaste två projekten jag jobbade på var <a target='_blank' href='https://halsomedicinsktcenter.se' class='normal-text-link'>Hälsomedicinskt Center</a> som driver vårdcentraler runtom i Skåne, samt <a target='_blank' href='https://bokningssystem.boka.se/' class='normal-text-link'>Boka</a> som är en av sveriges största bokningssajter.</p>"
     elif page == "text":
         header = "Innehållsrik text"
         welcome_text = f"<p class='big-text'>Innehållsrik text är inte text med många ord, utan ord med mycket mening.</p>"
