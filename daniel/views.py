@@ -16,8 +16,8 @@ def page(request, page):
     if page == "portfolio":
         header = "Portfolio"
         welcome_text = f"<p class='big-text'>Hej!<br/><br/> Jag är en av de stjärnor som ser till att webben blir en snyggare och roligare plats att vara på.</p>"
-        first_text_box = f"<p class='text-box'>Genom att kombinera <a href='/portfolio/text' class='about-text-link'>innehållsrik text</a>, <a href='/portfolio/kod' class='about-code-link'>lättförstådd kod</a> och <a href='/portfolio/grafik' class='about-visuals-link'>målande grafik</a> skapar jag engagerande och intressanta webb-sajter som är för alla.</p>"
-        second_text_box = f"<p class='text-box'>Det innebär såklart 100% på Chrome Lighthouse, gamification-element för att liva upp stämningen och ett gott öga för hur text och bild smälter samman.</p>"
+        first_text_box = f"<p class='text-box'>Front end och UX är mina spetsområden. Jag jobbar lika bra i Figma som i exempelvis React och har erfarenhet av CMS-system såsom Wordpress.</p>"
+        second_text_box = f"<p class='text-box'>Genom att kombinera <a href='/portfolio/text' class='about-text-link'>innehållsrik text</a>, <a href='/portfolio/kod' class='about-code-link'>lättförstådd kod</a> och <a href='/portfolio/grafik' class='about-visuals-link'>målande grafik</a> skapar jag engagerande och intressanta webb-sajter som är för alla.</p>"
         third_text_box = f"<p class='text-box'>De senaste två projekten jag jobbade på var Hälsomedicinskt Center som driver vårdcentraler runtom i Skåne, samt boka.se som är en av sveriges största bokningssajter.</p>"
     elif page == "text":
         header = "Innehållsrik text"
