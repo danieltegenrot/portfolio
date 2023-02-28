@@ -51,7 +51,11 @@
                 </div>
             {%endif%}
             <p class="read-about-text">Läs mer om...</p>
-            <div class="button-container">
+            {% if page == "portfolio" %}
+                <div class="button-container minimize-buttons">
+            {% else %}
+                <div class="button-container">
+            {% endif %}
                 {% if about_text_button == True %}
                 <div class="button-parent">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-file-text" viewBox="0 0 16 16">
@@ -81,7 +85,11 @@
             </div>
         </div>
         <footer>
-            <div class="footer-content">
+            {% if page == "grafik" %}
+                <div class="footer-content">
+            {% else %}
+                <div class="footer-content minimize-footer">
+            {% endif %}
                 <p>Jag har sett tillräckligt. Hur kommer jag i kontakt?</p>
                 <a href="mailto:daniel@tegenrot.se">daniel@tegenrot.se</a>
                 <a target="_blank" href="https://www.linkedin.com/in/daniel-tegenrot/">LinkedIn</a>
