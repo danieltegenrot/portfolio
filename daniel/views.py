@@ -22,14 +22,14 @@ def page(request, page):
     elif page == "text":
         header = "Innehållsrik text"
         welcome_text = f"<p class='big-text'>Innehållsrik text är inte text med många ord, utan ord med mycket mening.</p>"
-        first_text_box = f"<p class='text-box'>Att säga mycket på liten yta är ofta väsentligt för flödet på en webb-sajt att kännas naturligt och engagerande. Jag har två år på skrivarskola bakom mig och hjälper gärna till med texter och rubriksättning.</p>"
+        first_text_box = f"<p class='text-box'>Att säga mycket på liten yta är väsentligt för flödet på en webb-sajt att kännas naturligt och engagerande. Jag har två år på skrivarskola bakom mig och hjälper gärna till med texter och rubriksättning.</p>"
         second_text_box = f"<p class='text-box'>Jag hjälpte till med copyn åt <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-text-link'>halsomedcinsktcenter.se</a> där en stor del av jobbet var att sammanfatta tjänsten tydligt efter de designbeslut vi satte ut.</p>"
         third_text_box = f"<p class='text-box'>Likaså tog jag mycket ansvar över <a target='_blank' href='https://bokningssystem.boka.se' class='about-text-link'>bokningssystem.boka.se</a> och satte texter samt såg till att det stora utbudet av innehåll kändes sammanhängande och lättbegripligt.</p>"
         about_text_button = False
     elif page == "kod":
         header = "Lättförstådd kod"
         welcome_text = f"<p class='big-text'>Bra kod bör flöda som texten i en bok. Den ska vara lätt att läsa. Inte göra jobbet med så få tecken som möjligt.</p>" 
-        first_text_box = f"<p class='text-box'>Jag har suttit mycket med HTML, CSS/Sass, Bootstrap, Javacsript, React m. fl. Jag har en del erfarenhet av att sätta upp CMS-databaser men håller mig gärna på frontend-sidan av webben.</p>" 
+        first_text_box = f"<p class='text-box'>Jag har suttit mycket med HTML, CSS/Sass, Bootstrap, Javacsript, React m. fl. Jag har erfarenhet av att sätta upp CMS-databaser men håller mig gärna på frontend-sidan av webben.</p>" 
         second_text_box = f"<p class='text-box'>Jag hade ansvar för frontend på <a target='_blank' href='https://halsomedicinsktcenter.se' class='about-code-link'>halsomedicinsktcenter.se</a> när sidan byggdes om och jag var även med och byggde om framsidan åt <a target='_blank' href='https://boka.se' class='about-code-link'>boka.se</a> från grunden.</p>"
         third_text_box = f"<p class='text-box'>Den här sajten är byggd med Django och Python. <a target='_blank' href='https://github.com/danieltegenrot/portfolio' class='about-code-link'>GitHub</a></p>"
         about_code_button = False

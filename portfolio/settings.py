@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'daniel',
+    'django_distill',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

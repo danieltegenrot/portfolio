@@ -1,6 +1,6 @@
-# fly.toml file generated for danieltegenrot on 2023-03-03T20:26:33+01:00
+# fly.toml file generated for danieltegenrotportfolio on 2023-02-28T19:48:02+01:00
 
-app = "danieltegenrot"
+app = "danieltegenrotportfolio"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -16,6 +16,7 @@ processes = []
 
 [[services]]
   http_checks = []
+  tcp_checks = []
   internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
@@ -33,9 +34,3 @@ processes = []
   [[services.ports]]
     handlers = ["tls", "http"]
     port = 443
-
-  [[services.tcp_checks]]
-    grace_period = "1s"
-    interval = "15s"
-    restart_limit = 0
-    timeout = "2s"
